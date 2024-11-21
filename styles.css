@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Odin";
+    src: url("Norse-Bold.otf");
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#left-side {
+    width: 35%;
+    height: 100%;
+    background-image: url("/odin-ferns.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+#logo {
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Odin";
+    font-size: 2rem;
+    gap: 20px;
+    margin-top: 9rem;
+}
+
+#logo img {
+    height: 90%;
+}
+
+#right-side {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    background-color: rgb(242, 242, 242);
+}
+
+#main-text {
+    font-size: 1.4rem;
+    margin-left: 50px; 
+    font-weight: 600;
+    max-width: 700px; 
+    padding-top: 3.1rem;
+}
+
+form {
+    width: 100%;
+    background-color: white;
+    padding: 10px 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 1px 5px 10px lightgray;
+}
+
+#form-header {
+    padding-top: 20px;
+}
+
+form > div {
+    display: flex;
+    gap: 50px;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    border: .2px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+input:invalid {
+    outline-color: red;
+  }
+
+input:focus {
+    outline-color: blue;
+    box-shadow: 2px 4px 10px lightgray;
+}
+
+label {
+    font-size: 13px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#footer button {
+    color: white;
+    margin-left: 50px;
+    background-color: #596D48;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px lightgray;
+}
+
+#footer button + p {
+    margin-left: 50px;
+    font-size: 1.1rem;
+}
+
+#footer span {
+    color: #596D48;
+    cursor: pointer;
+    font-weight: 600;
+}
+
